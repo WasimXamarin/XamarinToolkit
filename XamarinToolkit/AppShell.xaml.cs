@@ -14,6 +14,7 @@ namespace XamarinToolkit
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
             Routing.RegisterRoute(nameof(AnimationBehaviorPage), typeof(AnimationBehaviorPage));
+            Routing.RegisterRoute(nameof(CharactersValidationBehaviorPage), typeof(CharactersValidationBehaviorPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
