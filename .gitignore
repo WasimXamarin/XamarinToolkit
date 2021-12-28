@@ -406,6 +406,4 @@ ASALocalRun/
 *.cache
 *.cache
 *.cache
-XamarinToolkit.iOS/obj/iPhoneSimulator/Debug/XamarinToolkit.iOS.csproj.AssemblyReference.cache
-XamarinToolkit.iOS/obj/iPhoneSimulator/Debug/XamarinToolkit.iOS.csproj.AssemblyReference.cache
-XamarinToolkit.iOS/obj/iPhoneSimulator/Debug/XamarinToolkit.iOS.csproj.AssemblyReference.cache
+XamarinToolkit.iOS/obj/
