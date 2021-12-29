@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using ObjCRuntime;
 using UIKit;
 
 namespace XamarinToolkit.iOS
@@ -27,5 +28,10 @@ namespace XamarinToolkit.iOS
 
             return base.FinishedLaunching(app, options);
         }
+
+        public override UIInterfaceOrientationMask GetSupportedInterfaceOrientations(
+            UIApplication application,
+            [Transient] UIWindow forWindow) =>
+            UIInterfaceOrientationMask.AllButUpsideDown;
     }
 }
