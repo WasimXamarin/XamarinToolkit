@@ -79,6 +79,10 @@
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
 
+    <FlyoutItem Title="Max Length Reached Behavior" Icon="icon_about">
+        <ShellContent Route="MaxLengthReachedBehaviorPage" ContentTemplate="{x:DataTemplate local:MaxLengthReachedBehaviorPage}"/>
+    </FlyoutItem>
+
     <FlyoutItem Title="Masked Behavior" Icon="icon_about">
         <ShellContent Route="MaskedBehaviorPage" ContentTemplate="{x:DataTemplate local:MaskedBehaviorPage}"/>
     </FlyoutItem>

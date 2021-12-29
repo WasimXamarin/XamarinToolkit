@@ -19,6 +19,7 @@ namespace XamarinToolkit
             Routing.RegisterRoute(nameof(EventToCommandBehaviorPage), typeof(EventToCommandBehaviorPage));
             Routing.RegisterRoute(nameof(ImpliedOrderGridBehaviorPage), typeof(ImpliedOrderGridBehaviorPage));
             Routing.RegisterRoute(nameof(MaskedBehaviorPage), typeof(MaskedBehaviorPage));
+            Routing.RegisterRoute(nameof(MaxLengthReachedBehaviorPage), typeof(MaxLengthReachedBehaviorPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
