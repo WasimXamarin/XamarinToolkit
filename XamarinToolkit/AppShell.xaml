@@ -79,6 +79,10 @@
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
 
+    <FlyoutItem Title="Masked Behavior" Icon="icon_about">
+        <ShellContent Route="MaskedBehaviorPage" ContentTemplate="{x:DataTemplate local:MaskedBehaviorPage}"/>
+    </FlyoutItem>
+
     <FlyoutItem Title="Implied Order Grid Behavior" Icon="icon_feed">
         <ShellContent Route="ImpliedOrderGridBehaviorPage" ContentTemplate="{x:DataTemplate local:ImpliedOrderGridBehaviorPage}"/>
     </FlyoutItem>
