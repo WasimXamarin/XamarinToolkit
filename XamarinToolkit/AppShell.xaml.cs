@@ -17,6 +17,7 @@ namespace XamarinToolkit
             Routing.RegisterRoute(nameof(CharactersValidationBehaviorPage), typeof(CharactersValidationBehaviorPage));
             Routing.RegisterRoute(nameof(EmailValidationBehaviorPage), typeof(EmailValidationBehaviorPage));
             Routing.RegisterRoute(nameof(EventToCommandBehaviorPage), typeof(EventToCommandBehaviorPage));
+            Routing.RegisterRoute(nameof(ImpliedOrderGridBehaviorPage), typeof(ImpliedOrderGridBehaviorPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
