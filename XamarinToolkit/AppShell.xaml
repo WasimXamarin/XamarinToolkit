@@ -79,7 +79,10 @@
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
 
-    <FlyoutItem Title="Email Validation Behavior Page" Icon="icon_feed">
+    <FlyoutItem Title="Event To Command Behavior" Icon="icon_feed">
+        <ShellContent Route="EventToCommandBehaviorPage" ContentTemplate="{x:DataTemplate local:EventToCommandBehaviorPage}"/>
+    </FlyoutItem>
+    <FlyoutItem Title="Email Validation Behavior" Icon="icon_feed">
         <ShellContent Route="EmailValidationBehaviorPage" ContentTemplate="{x:DataTemplate local:EmailValidationBehaviorPage}"/>
     </FlyoutItem>
 
