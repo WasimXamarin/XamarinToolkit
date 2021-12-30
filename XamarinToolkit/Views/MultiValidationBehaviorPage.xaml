@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XamarinToolkit.Views.MultiValidationBehaviorPage"
+    Title="{x:Binding Title}">
+
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Label Text="{x:Binding Title}"/>
+
+             <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Image Path: "/>
+                        <Span Text="{x:Binding PhotoPath}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Button Text="Take Image" Command="{x:Binding ImageCommand}"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
