@@ -113,7 +113,7 @@
      <Properties>
        <Policies>
          <VersionControlPolicy>
-           <CommitMessageStyle IncludeDirectoryPaths="True" />
+           <CommitMessageStyle LineAlign="0" IncludeDirectoryPaths="True" />
          </VersionControlPolicy>
        </Policies>
      </Properties>

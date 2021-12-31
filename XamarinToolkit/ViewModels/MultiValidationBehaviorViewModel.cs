@@ -23,6 +23,13 @@ namespace XamarinToolkit.ViewModels
             set { SetProperty(ref _PhotoPath, value); }
         }
 
+        private ImageSource _ImageSet;
+        public ImageSource ImageSet
+        {
+            get { return _ImageSet; }
+            set { SetProperty(ref _ImageSet, value); }
+        }
+
         public Command ImageCommand
         {
             get { return new Command(OnImageClicked); }
@@ -86,16 +93,20 @@ namespace XamarinToolkit.ViewModels
                 PhotoPath = null;
                 return;
             }
-            // save the file into local storage
-            var newFile = Path.Combine(FileSystem.CacheDirectory, photoData.FileName);
-            using (var stream = await photoData.OpenReadAsync())
-            {
-                using (var newStream = File.OpenWrite(newFile))
-                {
-                    await stream.CopyToAsync(newStream);
-                }
-            }
-            PhotoPath = newFile;
+
+            var streamValue = await photoData.OpenReadAsync();
+            ImageSet = ImageSource.FromStream(() => streamValue);
+
+            //// save the file into local storage File Path Display on the Label
+            //var newFile = Path.Combine(FileSystem.CacheDirectory, photoData.FileName);
+            //using (var stream = await photoData.OpenReadAsync())
+            //{
+            //    using (var newStream = File.OpenWrite(newFile))
+            //    {
+            //        await stream.CopyToAsync(newStream);
+            //    }
+            //}
+            //PhotoPath = newFile;
         }
 
 
