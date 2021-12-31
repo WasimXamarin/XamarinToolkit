@@ -79,6 +79,10 @@
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
 
+    <FlyoutItem Title="Text Validation Behavior" Icon="icon_feed">
+        <ShellContent Route="TextValidationBehaviorPage" ContentTemplate="{x:DataTemplate local:TextValidationBehaviorPage}"/>
+    </FlyoutItem>
+
     <FlyoutItem Title="Set Focused On Entry Completed Behavior" Icon="icon_feed">
         <ShellContent Route="SetFocusedOnEntryCompletedBehaviorPage" ContentTemplate="{x:DataTemplate local:SetFocusedOnEntryCompletedBehaviorPage}"/>
     </FlyoutItem>
