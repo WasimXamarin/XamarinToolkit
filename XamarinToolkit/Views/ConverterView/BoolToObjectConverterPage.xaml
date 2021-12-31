@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XamarinToolkit.Views.ConverterView.BoolToObjectConverterPage"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    Title="{x:Binding Title}">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <xct:BoolToObjectConverter x:Key="BoolToObjectConverter" TrueObject="26" FalseObject="16"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="{x:Binding Title}"/>
+
+            <Label Text="Hi there from the Docs!" FontSize="{Binding MyBoolean, Converter={StaticResource BoolToObjectConverter}}"/>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
