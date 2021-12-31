@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    x:Class="XamarinToolkit.Views.BehaviorView.NumericValidationBehaviorPage"
+    Title="{x:Binding Title}">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="InvalidEntryStyle" TargetType="Entry">
+                <Setter Property="TextColor" Value="Red" />
+            </Style>
+            <Style x:Key="ValidEntryStyle" TargetType="Entry">
+                <Setter Property="TextColor" Value="Green" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="{x:Binding Title}"/>
+            <Label Text="Text color will be changed according to the configured style in case of an invalid numeric format or when the numeric value is outside of the configured boundaries (min: 1.0, max: 100.0). Maximum decimal places value equals 2." />
+        <Entry Placeholder="Number">
+            <Entry.Behaviors>
+                <xct:NumericValidationBehavior InvalidStyle="{StaticResource InvalidEntryStyle}"
+                                               ValidStyle="{StaticResource ValidEntryStyle}"
+                                               MinimumValue="1.0"
+                                               MaximumValue="100.0"
+                                               MaximumDecimalPlaces="2"/>
+            </Entry.Behaviors>
+        </Entry>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

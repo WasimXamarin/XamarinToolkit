@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    x:Class="XamarinToolkit.Views.BehaviorView.MultiValidationBehaviorPage"
+    Title="{x:Binding Title}">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="InvalidEntryStyle" TargetType="Entry">
+            <Setter Property="TextColor" Value="Red" />
+        </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout Margin="20">
+            <Label Text="{x:Binding Title}"/>
+
+             <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Image Path: "/>
+                        <Span Text="{x:Binding PhotoPath}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Image Source="{x:Binding ImageSet}" HeightRequest="200" WidthRequest="200" Aspect="AspectFit"/>
+
+            <Button Text="Take Image" Command="{x:Binding ImageCommand}"/>
+
+            <Entry>
+                <Entry.Behaviors>
+                    <xct:MultiValidationBehavior
+                        x:Name="MultiValidation"
+                        InvalidStyle="{StaticResource InvalidEntryStyle}">
+
+                        <xct:NumericValidationBehavior
+                            xct:MultiValidationBehavior.Error="NaN"/>
+
+                        <xct:NumericValidationBehavior
+                            MinimumValue="-10"
+                            xct:MultiValidationBehavior.Error="Min: -10"/>
+
+                        <xct:NumericValidationBehavior
+                            MaximumValue="5"
+                            xct:MultiValidationBehavior.Error="Max: 5"/>
+
+                    </xct:MultiValidationBehavior>
+                </Entry.Behaviors>
+            </Entry>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
