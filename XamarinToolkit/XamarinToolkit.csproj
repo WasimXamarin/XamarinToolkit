@@ -20,5 +20,25 @@
     <None Remove="ShapeControl.Forms" />
     <None Remove="Plugin.Permissions" />
     <None Remove="Xam.Plugin.Media" />
+    <None Remove="Views\Converter\" />
+    <None Remove="ViewModels\ConverterViewModel%27\" />
+    <None Remove="Views\BehaviourView\" />
+    <None Remove="ViewModels\BehaviorViewModel\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\ConverterView\" />
+    <Folder Include="ViewModels\ConverterViewModel\" />
+    <Folder Include="Views\BehaviorView\" />
+    <Folder Include="ViewModels\BehaviorViewModel\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\BehaviorView\AnimationBehaviorPage.xaml.cs">
+      <DependentUpon>AnimationBehaviorPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\BehaviorView\CharactersValidationBehaviorPage.xaml.cs">
+      <DependentUpon>CharactersValidationBehaviorPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
