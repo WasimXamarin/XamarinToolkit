@@ -22,6 +22,7 @@ namespace XamarinToolkit
             Routing.RegisterRoute(nameof(MaskedBehaviorPage), typeof(MaskedBehaviorPage));
             Routing.RegisterRoute(nameof(MaxLengthReachedBehaviorPage), typeof(MaxLengthReachedBehaviorPage));
             Routing.RegisterRoute(nameof(MultiValidationBehaviorPage), typeof(MultiValidationBehaviorPage));
+            Routing.RegisterRoute(nameof(NumericValidationBehaviorPage), typeof(NumericValidationBehaviorPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)

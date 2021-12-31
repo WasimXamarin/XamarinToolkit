@@ -79,6 +79,10 @@
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
 
+    <FlyoutItem Title="NumericValidationBehaviorPage" Icon="icon_feed">
+        <ShellContent Route="NumericValidationBehaviorPage" ContentTemplate="{x:DataTemplate local:NumericValidationBehaviorPage}"/>
+    </FlyoutItem>
+
     <FlyoutItem Title="Multi Validation Behavior" Icon="icon_about">
         <ShellContent Route="MultiValidationBehaviorPage" ContentTemplate="{x:DataTemplate local:MultiValidationBehaviorPage}"/>
     </FlyoutItem>
