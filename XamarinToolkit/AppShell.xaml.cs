@@ -24,6 +24,7 @@ namespace XamarinToolkit
             Routing.RegisterRoute(nameof(MultiValidationBehaviorPage), typeof(MultiValidationBehaviorPage));
             Routing.RegisterRoute(nameof(NumericValidationBehaviorPage), typeof(NumericValidationBehaviorPage));
             Routing.RegisterRoute(nameof(RequiredStringValidationBehaviorPage), typeof(RequiredStringValidationBehaviorPage));
+            Routing.RegisterRoute(nameof(SetFocusedOnEntryCompletedBehaviorPage), typeof(SetFocusedOnEntryCompletedBehaviorPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
