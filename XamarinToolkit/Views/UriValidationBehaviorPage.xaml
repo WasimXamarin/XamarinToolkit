@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XamarinToolkit.Views.UriValidationBehaviorPage"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    Title="{x:Binding Title}">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="InvalidEntryStyle" TargetType="Entry">
+                <Setter Property="TextColor" Value="Red"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="{x:Binding Title}"/>
+
+            <Entry>
+                <Entry.Behaviors>
+                    <xct:UriValidationBehavior
+                        UriKind="Absolute"
+                        InvalidStyle="{StaticResource InvalidEntryStyle}"/>
+                </Entry.Behaviors>
+            </Entry>
+
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
