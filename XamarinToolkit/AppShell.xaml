@@ -79,6 +79,10 @@
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
 
+    <FlyoutItem Title="Uri Validation Behavior" Icon="icon_feed">
+        <ShellContent Route="UriValidationBehaviorPage" ContentTemplate="{x:DataTemplate local:UriValidationBehaviorPage}"/>
+    </FlyoutItem>
+
     <FlyoutItem Title="Text Validation Behavior" Icon="icon_feed">
         <ShellContent Route="TextValidationBehaviorPage" ContentTemplate="{x:DataTemplate local:TextValidationBehaviorPage}"/>
     </FlyoutItem>
