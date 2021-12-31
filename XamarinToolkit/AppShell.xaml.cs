@@ -4,6 +4,7 @@ using XamarinToolkit.ViewModels;
 using XamarinToolkit.Views;
 using Xamarin.Forms;
 using XamarinToolkit.Views.BehaviorView;
+using XamarinToolkit.Views.ConverterView;
 
 namespace XamarinToolkit
 {
@@ -28,6 +29,7 @@ namespace XamarinToolkit
             Routing.RegisterRoute(nameof(TextValidationBehaviorPage), typeof(TextValidationBehaviorPage));
             Routing.RegisterRoute(nameof(UriValidationBehaviorPage), typeof(UriValidationBehaviorPage));
             Routing.RegisterRoute(nameof(UserStoppedTypingBehaviorPage), typeof(UserStoppedTypingBehaviorPage));
+            Routing.RegisterRoute(nameof(BoolToObjectConverterPage), typeof(BoolToObjectConverterPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
