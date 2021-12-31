@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using XamarinToolkit.ViewModels;
 using XamarinToolkit.Views;
 using Xamarin.Forms;
+using XamarinToolkit.Views.BehaviorView;
 
 namespace XamarinToolkit
 {
@@ -14,7 +15,6 @@ namespace XamarinToolkit
             Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
             Routing.RegisterRoute(nameof(NewItemPage), typeof(NewItemPage));
             Routing.RegisterRoute(nameof(AnimationBehaviorPage), typeof(AnimationBehaviorPage));
-
             Routing.RegisterRoute(nameof(CharactersValidationBehaviorPage), typeof(CharactersValidationBehaviorPage));
             Routing.RegisterRoute(nameof(EmailValidationBehaviorPage), typeof(EmailValidationBehaviorPage));
             Routing.RegisterRoute(nameof(EventToCommandBehaviorPage), typeof(EventToCommandBehaviorPage));

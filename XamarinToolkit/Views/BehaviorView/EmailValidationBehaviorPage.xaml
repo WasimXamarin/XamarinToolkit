@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XamarinToolkit.Views.BehaviorView.EmailValidationBehaviorPage"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    Title="{x:Binding Title}">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <xct:InvertedBoolConverter x:Key="invertBoolConverter" />
+             <Style x:Key="InvalidEntryStyle" TargetType="Entry">
+                <Setter Property="TextColor" Value="Red"/>
+            </Style>
+
+            <Style x:Key="ValidEntryStyle" TargetType="Entry">
+                <Setter Property="TextColor" Value="Green"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Label Text="Email not valid"
+                   TextColor="Red"
+                   IsVisible="{Binding EmailValid, Converter={StaticResource invertBoolConverter}}" />
+
+            <Entry Placeholder="Email" Text="{x:Binding Email}">
+                <Entry.Behaviors>
+                        <xct:EmailValidationBehavior
+                            IsValid="{x:Binding EmailValid}"
+                            Flags="ValidateOnUnfocusing"/>
+                </Entry.Behaviors>
+            </Entry>
+
+            <Button Text="Send"
+                    TextColor="#07987f"
+                    BackgroundColor="#eeeeee"
+                    Margin="0,10,0,10"
+                    Command="{Binding LoadSendRegistrationCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
