@@ -14,6 +14,7 @@
     <PackageReference Include="Xamarin.CommunityToolkit" Version="1.3.1" />
     <PackageReference Include="Plugin.Permissions" Version="6.0.1" />
     <PackageReference Include="Xam.Plugin.Media" Version="5.0.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Xamarin.CommunityToolkit" />
@@ -24,6 +25,7 @@
     <None Remove="ViewModels\ConverterViewModel%27\" />
     <None Remove="Views\BehaviourView\" />
     <None Remove="ViewModels\BehaviorViewModel\" />
+    <None Remove="Newtonsoft.Json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\ConverterView\" />

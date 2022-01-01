@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XamarinToolkit.Views.ConverterView.ByteArrayToImageSourceConverterPage"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    Title="{x:Binding Title}">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <xct:ByteArrayToImageSourceConverter x:Key="ByteArrayToImageSourceConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <!--<ContentPage.Behaviors>
+        <xct:EventToCommandBehavior Command="{Binding PageAppearingCommand}" EventName="Appearing" />
+    </ContentPage.Behaviors>-->
+
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="{x:Binding Title}"/>
+
+            <Label
+                Margin="16"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                Text="Image below uses byte array from ViewModel which is converted to ImageSource using ByteArrayToImageSource converter." />
+
+            <xct:AvatarView
+                HorizontalOptions="Center"
+                Size="300"
+                Source="{Binding Profile, Converter={StaticResource ByteArrayToImageSourceConverter}}"
+                VerticalOptions="Center" />
+
+            <Button Text="Seelct File" Command="{x:Binding PageAppearingCommand}"/>
+
+            <Label
+                Margin="16"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                IsVisible="{Binding IsBusy}"
+                Text="Please wait..." />
+
+            <Label Text="{x:Binding Avatar, Converter={StaticResource ByteArrayToImageSourceConverter}}"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
