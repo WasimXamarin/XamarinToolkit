@@ -2,7 +2,7 @@
 <Shell xmlns="http://xamarin.com/schemas/2014/forms" 
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:local="clr-namespace:XamarinToolkit.Views"
-       xmlns:localNew="clr-namespace:XamarinToolkit.Views.BehaviorView"
+       xmlns:localBehavior="clr-namespace:XamarinToolkit.Views.BehaviorView"
        xmlns:localConverter="clr-namespace:XamarinToolkit.Views.ConverterView"
        Title="XamarinToolkit"
        x:Class="XamarinToolkit.AppShell">
@@ -81,62 +81,66 @@
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
 
+    <FlyoutItem Title="Byte Array To ImageSource Converter" Icon="icon_about">
+        <ShellContent Route="ByteArrayToImageSourceConverterPage" ContentTemplate="{x:DataTemplate localConverter:ByteArrayToImageSourceConverterPage}"/>
+    </FlyoutItem>
+
     <FlyoutItem Title="Bool To Object Converter" Icon="icon_about">
         <ShellContent Route="BoolToObjectConverterPage" ContentTemplate="{x:DataTemplate localConverter:BoolToObjectConverterPage}"/>
     </FlyoutItem>
 
     <FlyoutItem Title="User Stopped Typing Behavior" Icon="icon_feed">
-        <ShellContent Route="UserStoppedTypingBehaviorPage" ContentTemplate="{x:DataTemplate localNew:UserStoppedTypingBehaviorPage}"/>
+        <ShellContent Route="UserStoppedTypingBehaviorPage" ContentTemplate="{x:DataTemplate localBehavior:UserStoppedTypingBehaviorPage}"/>
     </FlyoutItem>
 
     <FlyoutItem Title="Uri Validation Behavior" Icon="icon_feed">
-        <ShellContent Route="UriValidationBehaviorPage" ContentTemplate="{x:DataTemplate localNew:UriValidationBehaviorPage}"/>
+        <ShellContent Route="UriValidationBehaviorPage" ContentTemplate="{x:DataTemplate localBehavior:UriValidationBehaviorPage}"/>
     </FlyoutItem>
 
     <FlyoutItem Title="Text Validation Behavior" Icon="icon_feed">
-        <ShellContent Route="TextValidationBehaviorPage" ContentTemplate="{x:DataTemplate localNew:TextValidationBehaviorPage}"/>
+        <ShellContent Route="TextValidationBehaviorPage" ContentTemplate="{x:DataTemplate localBehavior:TextValidationBehaviorPage}"/>
     </FlyoutItem>
 
     <FlyoutItem Title="Set Focused On Entry Completed Behavior" Icon="icon_feed">
-        <ShellContent Route="SetFocusedOnEntryCompletedBehaviorPage" ContentTemplate="{x:DataTemplate localNew:SetFocusedOnEntryCompletedBehaviorPage}"/>
+        <ShellContent Route="SetFocusedOnEntryCompletedBehaviorPage" ContentTemplate="{x:DataTemplate localBehavior:SetFocusedOnEntryCompletedBehaviorPage}"/>
     </FlyoutItem>
 
     <FlyoutItem Title="Required String Validation Behavior" Icon="icon_feed">
-        <ShellContent Route="RequiredStringValidationBehaviorPage" ContentTemplate="{x:DataTemplate localNew:RequiredStringValidationBehaviorPage}"/>
+        <ShellContent Route="RequiredStringValidationBehaviorPage" ContentTemplate="{x:DataTemplate localBehavior:RequiredStringValidationBehaviorPage}"/>
     </FlyoutItem>
 
     <FlyoutItem Title="NumericValidationBehaviorPage" Icon="icon_feed">
-        <ShellContent Route="NumericValidationBehaviorPage" ContentTemplate="{x:DataTemplate localNew:NumericValidationBehaviorPage}"/>
+        <ShellContent Route="NumericValidationBehaviorPage" ContentTemplate="{x:DataTemplate localBehavior:NumericValidationBehaviorPage}"/>
     </FlyoutItem>
 
     <FlyoutItem Title="Multi Validation Behavior" Icon="icon_feed">
-        <ShellContent Route="MultiValidationBehaviorPage" ContentTemplate="{x:DataTemplate localNew:MultiValidationBehaviorPage}"/>
+        <ShellContent Route="MultiValidationBehaviorPage" ContentTemplate="{x:DataTemplate localBehavior:MultiValidationBehaviorPage}"/>
     </FlyoutItem>
 
     <FlyoutItem Title="Max Length Reached Behavior" Icon="icon_feed">
-        <ShellContent Route="MaxLengthReachedBehaviorPage" ContentTemplate="{x:DataTemplate localNew:MaxLengthReachedBehaviorPage}"/>
+        <ShellContent Route="MaxLengthReachedBehaviorPage" ContentTemplate="{x:DataTemplate localBehavior:MaxLengthReachedBehaviorPage}"/>
     </FlyoutItem>
 
     <FlyoutItem Title="Masked Behavior" Icon="icon_feed">
-        <ShellContent Route="MaskedBehaviorPage" ContentTemplate="{x:DataTemplate localNew:MaskedBehaviorPage}"/>
+        <ShellContent Route="MaskedBehaviorPage" ContentTemplate="{x:DataTemplate localBehavior:MaskedBehaviorPage}"/>
     </FlyoutItem>
 
     <FlyoutItem Title="Implied Order Grid Behavior" Icon="icon_feed">
-        <ShellContent Route="ImpliedOrderGridBehaviorPage" ContentTemplate="{x:DataTemplate localNew:ImpliedOrderGridBehaviorPage}"/>
+        <ShellContent Route="ImpliedOrderGridBehaviorPage" ContentTemplate="{x:DataTemplate localBehavior:ImpliedOrderGridBehaviorPage}"/>
     </FlyoutItem>
 
     <FlyoutItem Title="Event To Command Behavior" Icon="icon_feed">
-        <ShellContent Route="EventToCommandBehaviorPage" ContentTemplate="{x:DataTemplate localNew:EventToCommandBehaviorPage}"/>
+        <ShellContent Route="EventToCommandBehaviorPage" ContentTemplate="{x:DataTemplate localBehavior:EventToCommandBehaviorPage}"/>
     </FlyoutItem>
     <FlyoutItem Title="Email Validation Behavior" Icon="icon_feed">
-        <ShellContent Route="EmailValidationBehaviorPage" ContentTemplate="{x:DataTemplate localNew:EmailValidationBehaviorPage}"/>
+        <ShellContent Route="EmailValidationBehaviorPage" ContentTemplate="{x:DataTemplate localBehavior:EmailValidationBehaviorPage}"/>
     </FlyoutItem>
 
     <FlyoutItem Title="Characters Validation Behavior" Icon="icon_feed">
-        <ShellContent Route="CharactersValidationBehaviorPage" ContentTemplate="{x:DataTemplate localNew:CharactersValidationBehaviorPage}"/>
+        <ShellContent Route="CharactersValidationBehaviorPage" ContentTemplate="{x:DataTemplate localBehavior:CharactersValidationBehaviorPage}"/>
     </FlyoutItem>
     <FlyoutItem Title="Animation Behavior" Icon="icon_feed">
-        <ShellContent Route="AnimationBehaviorPage" ContentTemplate="{DataTemplate localNew:AnimationBehaviorPage}" />
+        <ShellContent Route="AnimationBehaviorPage" ContentTemplate="{DataTemplate localBehavior:AnimationBehaviorPage}" />
     </FlyoutItem>
     <!--<FlyoutItem Title="About" Icon="icon_about.png">
         <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
