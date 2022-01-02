@@ -31,6 +31,7 @@ namespace XamarinToolkit
             Routing.RegisterRoute(nameof(UserStoppedTypingBehaviorPage), typeof(UserStoppedTypingBehaviorPage));
             Routing.RegisterRoute(nameof(BoolToObjectConverterPage), typeof(BoolToObjectConverterPage));
             Routing.RegisterRoute(nameof(ByteArrayToImageSourceConverterPage), typeof(ByteArrayToImageSourceConverterPage));
+            Routing.RegisterRoute(nameof(CompareConverterPage), typeof(CompareConverterPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)

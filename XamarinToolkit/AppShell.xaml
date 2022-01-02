@@ -81,6 +81,10 @@
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
 
+    <FlyoutItem Title="Compare Converter" Icon="icon_about">
+        <ShellContent Route="CompareConverterPage" ContentTemplate="{x:DataTemplate localConverter:CompareConverterPage}"/>
+    </FlyoutItem>
+
     <FlyoutItem Title="Byte Array To ImageSource Converter" Icon="icon_about">
         <ShellContent Route="ByteArrayToImageSourceConverterPage" ContentTemplate="{x:DataTemplate localConverter:ByteArrayToImageSourceConverterPage}"/>
     </FlyoutItem>
