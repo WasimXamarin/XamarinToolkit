@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    x:Class="XamarinToolkit.Views.ConverterView.DateTimeOffsetConverterPage"
+    Title="{x:Binding Title}">
+
+    <ContentPage.Resources>
+         <ResourceDictionary>
+             <xct:DateTimeOffsetConverter x:Key="DateTimeOffsetConverter" />
+         </ResourceDictionary>
+    </ContentPage.Resources>
+
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="{x:Binding Title}"/>
+           <Label Text="The DatePicker bellow is bound to a Property of type DateTimeOffset."
+                   Margin="16"
+                   HorizontalOptions="Center"
+                   FontAttributes="Bold" />
+
+            <DatePicker Date="{Binding TheDate, Converter={StaticResource DateTimeOffsetConverter}}" 
+                   Margin="16"
+                   HorizontalOptions="Center" />
+
+            <Label Text="{Binding TheDate}"
+                   Margin="16"
+                   HorizontalOptions="Center"
+                   FontAttributes="Bold" />
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
