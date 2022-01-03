@@ -33,6 +33,7 @@ namespace XamarinToolkit
             Routing.RegisterRoute(nameof(ByteArrayToImageSourceConverterPage), typeof(ByteArrayToImageSourceConverterPage));
             Routing.RegisterRoute(nameof(CompareConverterPage), typeof(CompareConverterPage));
             Routing.RegisterRoute(nameof(DateTimeOffsetConverterPage), typeof(DateTimeOffsetConverterPage));
+            Routing.RegisterRoute(nameof(DoubleToIntConverterPage), typeof(DoubleToIntConverterPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
