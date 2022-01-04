@@ -34,6 +34,8 @@ namespace XamarinToolkit
             Routing.RegisterRoute(nameof(CompareConverterPage), typeof(CompareConverterPage));
             Routing.RegisterRoute(nameof(DateTimeOffsetConverterPage), typeof(DateTimeOffsetConverterPage));
             Routing.RegisterRoute(nameof(DoubleToIntConverterPage), typeof(DoubleToIntConverterPage));
+            Routing.RegisterRoute(nameof(EnumToBoolConverterPage), typeof(EnumToBoolConverterPage));
+            Routing.RegisterRoute(nameof(EqualConverterPage), typeof(EqualConverterPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)

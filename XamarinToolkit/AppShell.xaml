@@ -81,6 +81,14 @@
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
 
+    <FlyoutItem Title="Equal Converter" Icon="icon_about">
+        <ShellContent Route="EqualConverterPage" ContentTemplate="{x:DataTemplate localConverter:EqualConverterPage}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Enum To Bool Converter" Icon="icon_about">
+        <ShellContent Route="EnumToBoolConverterPage" ContentTemplate="{x:DataTemplate localConverter:EnumToBoolConverterPage}"/>
+    </FlyoutItem>
+
     <FlyoutItem Title="Double ToInt Converter" Icon="icon_about">
         <ShellContent Route="DoubleToIntConverterPage" ContentTemplate="{x:DataTemplate localConverter:DoubleToIntConverterPage}"/>
     </FlyoutItem>
