@@ -36,6 +36,7 @@ namespace XamarinToolkit
             Routing.RegisterRoute(nameof(DoubleToIntConverterPage), typeof(DoubleToIntConverterPage));
             Routing.RegisterRoute(nameof(EnumToBoolConverterPage), typeof(EnumToBoolConverterPage));
             Routing.RegisterRoute(nameof(EqualConverterPage), typeof(EqualConverterPage));
+            Routing.RegisterRoute(nameof(IndexToArrayItemConverterPage), typeof(IndexToArrayItemConverterPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
