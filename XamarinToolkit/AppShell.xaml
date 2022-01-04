@@ -81,6 +81,10 @@
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
 
+    <FlyoutItem Title="Inverted Bool Converter" Icon="icon_about">
+        <ShellContent Route="InvertedBoolConverterPage" ContentTemplate="{x:DataTemplate localConverter:InvertedBoolConverterPage}"/>
+    </FlyoutItem>
+
     <FlyoutItem Title="Index To Array Item Converter" Icon="icon_about">
         <ShellContent Route="IndexToArrayItemConverterPage" ContentTemplate="{x:DataTemplate localConverter:IndexToArrayItemConverterPage}"/>
     </FlyoutItem>
