@@ -26,12 +26,14 @@
     <None Remove="Views\BehaviourView\" />
     <None Remove="ViewModels\BehaviorViewModel\" />
     <None Remove="Newtonsoft.Json" />
+    <None Remove="Models\ConverterModel\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\ConverterView\" />
     <Folder Include="ViewModels\ConverterViewModel\" />
     <Folder Include="Views\BehaviorView\" />
     <Folder Include="ViewModels\BehaviorViewModel\" />
+    <Folder Include="Models\ConverterModel\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\BehaviorView\AnimationBehaviorPage.xaml.cs">

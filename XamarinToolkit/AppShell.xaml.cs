@@ -40,6 +40,7 @@ namespace XamarinToolkit
             Routing.RegisterRoute(nameof(InvertedBoolConverterPage), typeof(InvertedBoolConverterPage));
             Routing.RegisterRoute(nameof(IsInRangeConverterPage), typeof(IsInRangeConverterPage));
             Routing.RegisterRoute(nameof(IsNullOrEmptyConverterPage), typeof(IsNullOrEmptyConverterPage));
+            Routing.RegisterRoute(nameof(ItemSelectedEventArgsConverterPage), typeof(ItemSelectedEventArgsConverterPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
