@@ -81,6 +81,10 @@
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
 
+    <FlyoutItem Title="List Is Not Null Or Empty Converter" Icon="icon_about">
+        <ShellContent Route="ListIsNotNullOrEmptyConverterPage" ContentTemplate="{x:DataTemplate localConverter:ListIsNotNullOrEmptyConverterPage}"/>
+    </FlyoutItem>
+
     <FlyoutItem Title="Item Tapped Event Args Converter" Icon="icon_about">
         <ShellContent Route="ItemTappedEventArgsConverterPage" ContentTemplate="{x:DataTemplate localConverter:ItemTappedEventArgsConverterPage}"/>
     </FlyoutItem>
