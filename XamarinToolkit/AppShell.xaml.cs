@@ -44,6 +44,7 @@ namespace XamarinToolkit
             Routing.RegisterRoute(nameof(ItemTappedEventArgsConverterPage), typeof(ItemTappedEventArgsConverterPage));
             Routing.RegisterRoute(nameof(ListIsNotNullOrEmptyConverterPage), typeof(ListIsNotNullOrEmptyConverterPage));
             Routing.RegisterRoute(nameof(ListIsNullOrEmptyConverterPage), typeof(ListIsNullOrEmptyConverterPage));
+            Routing.RegisterRoute(nameof(ListToStringConverterPage), typeof(ListToStringConverterPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
