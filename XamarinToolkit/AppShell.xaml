@@ -81,6 +81,10 @@
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
 
+    <FlyoutItem Title="List To String Converter" Icon="icon_about">
+        <ShellContent Route="ListToStringConverterPage" ContentTemplate="{x:DataTemplate localConverter:ListToStringConverterPage}"/>
+    </FlyoutItem>
+
     <FlyoutItem Title="List Is Null Or Empty Converter" Icon="icon_about">
         <ShellContent Route="ListIsNullOrEmptyConverterPage" ContentTemplate="{x:DataTemplate localConverter:ListIsNullOrEmptyConverterPage}"/>
     </FlyoutItem>
