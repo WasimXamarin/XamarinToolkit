@@ -81,6 +81,10 @@
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
 
+    <FlyoutItem Title="Text Case Converter" Icon="icon_about">
+        <ShellContent Route="TextCaseConverterPage" ContentTemplate="{x:DataTemplate localConverter:TextCaseConverterPage}"/>
+    </FlyoutItem>
+
     <FlyoutItem Title="String To List Converter" Icon="icon_about">
         <ShellContent Route="StringToListConverterPage" ContentTemplate="{x:DataTemplate localConverter:StringToListConverterPage}"/>
     </FlyoutItem>
