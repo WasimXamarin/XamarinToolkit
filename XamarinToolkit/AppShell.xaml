@@ -81,6 +81,10 @@
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
 
+    <FlyoutItem Title="Not Equal Converter" Icon="icon_about">
+        <ShellContent Route="NotEqualConverterPage" ContentTemplate="{x:DataTemplate localConverter:NotEqualConverterPage}"/>
+    </FlyoutItem>
+
     <FlyoutItem Title="Multi Converter" Icon="icon_about">
         <ShellContent Route="MultiConverterPage" ContentTemplate="{x:DataTemplate localConverter:MultiConverterPage}"/>
     </FlyoutItem>
