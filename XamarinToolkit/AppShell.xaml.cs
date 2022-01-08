@@ -50,6 +50,7 @@ namespace XamarinToolkit
             Routing.RegisterRoute(nameof(NotEqualConverterPage), typeof(NotEqualConverterPage));
             Routing.RegisterRoute(nameof(StringToListConverterPage), typeof(StringToListConverterPage));
             Routing.RegisterRoute(nameof(TextCaseConverterPage), typeof(TextCaseConverterPage));
+            Routing.RegisterRoute(nameof(VariableMultiValueConverterPage), typeof(VariableMultiValueConverterPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
