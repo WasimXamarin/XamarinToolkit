@@ -81,6 +81,10 @@
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
 
+    <FlyoutItem Title="Math Expression Converter" Icon="icon_about">
+        <ShellContent Route="MathExpressionConverterPage" ContentTemplate="{x:DataTemplate localConverter:MathExpressionConverterPage}"/>
+    </FlyoutItem>
+
     <FlyoutItem Title="List To String Converter" Icon="icon_about">
         <ShellContent Route="ListToStringConverterPage" ContentTemplate="{x:DataTemplate localConverter:ListToStringConverterPage}"/>
     </FlyoutItem>
