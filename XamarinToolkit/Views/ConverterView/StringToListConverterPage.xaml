@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    x:Class="XamarinToolkit.Views.ConverterView.StringToListConverterPage"
+    Title="{x:Binding Title}">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <xct:StringToListConverter x:Key="StringToListConverter" SplitOptions="RemoveEmptyEntries">
+                <xct:StringToListConverter.Separators>
+                    <x:String>,</x:String>
+                    <x:String>.</x:String>
+                    <x:String>;</x:String>
+                </xct:StringToListConverter.Separators>
+            </xct:StringToListConverter>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Label Text="{x:Binding Title}"/>
+            </StackLayout>
+            <StackLayout>
+                <Grid Margin="20,0" RowDefinitions="Auto,Auto,*">
+            <Label
+                Grid.Row="0"
+                FontAttributes="Bold"
+                Text="Enter some text separated by ',' or '.' or ';'" />
+            <Entry
+                x:Name="ExampleText"
+                Grid.Row="1"
+                FontSize="Medium"
+                Placeholder="Enter some text separated by ',' or '.' or ';'"
+                Text="Item 1,Item 2,Item 3" />
+            <ListView
+                Grid.Row="2"
+                BindingContext="{x:Reference Name=ExampleText}"
+                ItemsSource="{Binding Path=Text, Converter={StaticResource StringToListConverter}}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Label FontSize="Medium" Text="{Binding .}" />
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
