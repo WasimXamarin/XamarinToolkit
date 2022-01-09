@@ -6,6 +6,7 @@ using Xamarin.Forms;
 using XamarinToolkit.Views.BehaviorView;
 using XamarinToolkit.Views.ConverterView;
 using XamarinToolkit.Views.EffectsView;
+using XamarinToolkit.Views.ExtensionsView;
 
 namespace XamarinToolkit
 {
@@ -54,6 +55,7 @@ namespace XamarinToolkit
             Routing.RegisterRoute(nameof(VariableMultiValueConverterPage), typeof(VariableMultiValueConverterPage));
             Routing.RegisterRoute(nameof(LifecycleEffectPage), typeof(LifecycleEffectPage));
             Routing.RegisterRoute(nameof(SafeAreaEffectPage), typeof(SafeAreaEffectPage));
+            Routing.RegisterRoute(nameof(ImageResourceExtensionPage), typeof(ImageResourceExtensionPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
