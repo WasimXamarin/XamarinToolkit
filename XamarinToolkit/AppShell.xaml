@@ -5,6 +5,7 @@
        xmlns:localBehavior="clr-namespace:XamarinToolkit.Views.BehaviorView"
        xmlns:localConverter="clr-namespace:XamarinToolkit.Views.ConverterView"
        xmlns:localEffects="clr-namespace:XamarinToolkit.Views.EffectsView"
+       xmlns:localExtensions="clr-namespace:XamarinToolkit.Views.ExtensionsView"
        Title="XamarinToolkit"
        x:Class="XamarinToolkit.AppShell">
 
@@ -81,6 +82,10 @@
         FlyoutDisplayOptions="AsMultipleItems" will create a separate flyout item for each child element    
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
+
+    <FlyoutItem Title="Image Resource Extension" Icon="icon_about">
+        <ShellContent Route="ImageResourceExtensionPage" ContentTemplate="{x:DataTemplate localExtensions:ImageResourceExtensionPage}"/>
+    </FlyoutItem>
 
     <FlyoutItem Title="Safe Area Effect" Icon="icon_feed">
         <ShellContent Route="SafeAreaEffectPage" ContentTemplate="{x:DataTemplate localEffects:SafeAreaEffectPage}"/>
