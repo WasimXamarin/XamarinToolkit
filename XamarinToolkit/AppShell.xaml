@@ -82,6 +82,10 @@
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
 
+    <FlyoutItem Title="Safe Area Effect" Icon="icon_feed">
+        <ShellContent Route="SafeAreaEffectPage" ContentTemplate="{x:DataTemplate localEffects:SafeAreaEffectPage}"/>
+    </FlyoutItem>
+
     <FlyoutItem Title="Life cycle Effect" Icon="icon_feed">
         <ShellContent Route="LifecycleEffectPage" ContentTemplate="{x:DataTemplate localEffects:LifecycleEffectPage}"/>
     </FlyoutItem>
