@@ -29,6 +29,8 @@
     <None Remove="Models\ConverterModel\" />
     <None Remove="Views\EffectsView\" />
     <None Remove="ViewModels\EffectsViewModel\" />
+    <None Remove="Views\ExtensionsView\" />
+    <None Remove="ViewModels\ExtensionsViewModel\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\ConverterView\" />
@@ -38,6 +40,8 @@
     <Folder Include="Models\ConverterModel\" />
     <Folder Include="Views\EffectsView\" />
     <Folder Include="ViewModels\EffectsViewModel\" />
+    <Folder Include="Views\ExtensionsView\" />
+    <Folder Include="ViewModels\ExtensionsViewModel\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\BehaviorView\AnimationBehaviorPage.xaml.cs">
