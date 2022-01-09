@@ -5,6 +5,7 @@ using XamarinToolkit.Views;
 using Xamarin.Forms;
 using XamarinToolkit.Views.BehaviorView;
 using XamarinToolkit.Views.ConverterView;
+using XamarinToolkit.Views.EffectsView;
 
 namespace XamarinToolkit
 {
@@ -51,6 +52,7 @@ namespace XamarinToolkit
             Routing.RegisterRoute(nameof(StringToListConverterPage), typeof(StringToListConverterPage));
             Routing.RegisterRoute(nameof(TextCaseConverterPage), typeof(TextCaseConverterPage));
             Routing.RegisterRoute(nameof(VariableMultiValueConverterPage), typeof(VariableMultiValueConverterPage));
+            Routing.RegisterRoute(nameof(LifecycleEffectPage), typeof(LifecycleEffectPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
