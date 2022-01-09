@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="XamarinToolkit.Views.EffectsView.SafeAreaEffectPage"
+    Title="{x:Binding Title}">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Label Text="{x:Binding Title}"/>
+            </StackLayout>
+            <StackLayout
+            x:Name="stack"
+            Padding="10,10"
+            BackgroundColor="Pink"
+            HorizontalOptions="Fill"
+            Spacing="10"
+            VerticalOptions="Fill">
+            <Label Text="The SafeAreaEffect is an effect that can be added to any element through an attached property to indicate whether or not that element should take current safe areas into account. This is an area of the screen that is safe for all devices that use iOS 11 and greater. Specifically, it will help to make sure that content isn't clipped by rounded device corners, the home indicator, or the sensor housing on an iPhone X. The effect only targets iOS, meaning that on other platforms it does not do anything." TextColor="Green" />
+            <StackLayout Orientation="Horizontal" Spacing="10">
+                <Label Text="Toggle SafeAreaEffect" TextColor="Red" />
+
+                <Switch
+                    x:Name="ActivationToggle"
+                    IsToggled="False"
+                    Toggled="ActivationToggle_Toggled" />
+            </StackLayout>
+        </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

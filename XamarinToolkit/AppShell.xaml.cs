@@ -53,6 +53,7 @@ namespace XamarinToolkit
             Routing.RegisterRoute(nameof(TextCaseConverterPage), typeof(TextCaseConverterPage));
             Routing.RegisterRoute(nameof(VariableMultiValueConverterPage), typeof(VariableMultiValueConverterPage));
             Routing.RegisterRoute(nameof(LifecycleEffectPage), typeof(LifecycleEffectPage));
+            Routing.RegisterRoute(nameof(SafeAreaEffectPage), typeof(SafeAreaEffectPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
