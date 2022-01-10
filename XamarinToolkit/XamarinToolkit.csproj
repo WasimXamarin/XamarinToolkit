@@ -31,6 +31,8 @@
     <None Remove="ViewModels\EffectsViewModel\" />
     <None Remove="Views\ExtensionsView\" />
     <None Remove="ViewModels\ExtensionsViewModel\" />
+    <None Remove="Models\ExtensionsModel\" />
+    <None Remove="Resx\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\ConverterView\" />
@@ -42,6 +44,8 @@
     <Folder Include="ViewModels\EffectsViewModel\" />
     <Folder Include="Views\ExtensionsView\" />
     <Folder Include="ViewModels\ExtensionsViewModel\" />
+    <Folder Include="Models\ExtensionsModel\" />
+    <Folder Include="Resx\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\BehaviorView\AnimationBehaviorPage.xaml.cs">
@@ -52,5 +56,28 @@
       <DependentUpon>CharactersValidationBehaviorPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Resx\AppResources.Designer.cs">
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resx\AppResources.es.Designer.cs">
+      <DependentUpon>AppResources.es.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Resx\AppResources.en.Designer.cs">
+      <DependentUpon>AppResources.en.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Resx\AppResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resx\AppResources.es.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.es.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resx\AppResources.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

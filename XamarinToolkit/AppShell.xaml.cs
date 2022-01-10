@@ -56,6 +56,7 @@ namespace XamarinToolkit
             Routing.RegisterRoute(nameof(LifecycleEffectPage), typeof(LifecycleEffectPage));
             Routing.RegisterRoute(nameof(SafeAreaEffectPage), typeof(SafeAreaEffectPage));
             Routing.RegisterRoute(nameof(ImageResourceExtensionPage), typeof(ImageResourceExtensionPage));
+            Routing.RegisterRoute(nameof(TranslateExtensionPage), typeof(TranslateExtensionPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
