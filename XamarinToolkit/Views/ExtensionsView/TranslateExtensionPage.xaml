@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    x:Class="XamarinToolkit.Views.ExtensionsView.TranslateExtensionPage"
+    Title="{x:Binding Title}">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="X" Order="Primary" Clicked="OnCloseClicked" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Label Text="{x:Binding Title}"/>
+            </StackLayout>
+            <StackLayout Padding="20"
+                 VerticalOptions="Center"
+                 Spacing="10">
+        <Label Text="{xct:Translate ChangeLanguage}"/>
+
+        <Picker ItemsSource="{Binding SupportedLanguages}"
+                ItemDisplayBinding="{Binding Name}"
+                SelectedItem="{Binding SelectedLanguage}"/>
+
+        <Button Text="{xct:Translate Save}"
+                Command="{Binding ChangeLanguageCommand, Mode=OneTime}"/>
+
+        <Label HorizontalTextAlignment="Center" Text="{Binding AppVersion.Localized}"/>
+    </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
