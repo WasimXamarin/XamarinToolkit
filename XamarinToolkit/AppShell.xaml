@@ -75,11 +75,13 @@
                 </Setter>
             </Style>
         </ResourceDictionary>
+
+
     </Shell.Resources>
 
-    <!-- 
+    <!--
         When the Flyout is visible this defines the content to display in the flyout.
-        FlyoutDisplayOptions="AsMultipleItems" will create a separate flyout item for each child element    
+        FlyoutDisplayOptions="AsMultipleItems" will create a separate flyout item for each child element
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
 
