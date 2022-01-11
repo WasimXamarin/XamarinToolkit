@@ -6,6 +6,7 @@
        xmlns:localConverter="clr-namespace:XamarinToolkit.Views.ConverterView"
        xmlns:localEffects="clr-namespace:XamarinToolkit.Views.EffectsView"
        xmlns:localExtensions="clr-namespace:XamarinToolkit.Views.ExtensionsView"
+       xmlns:localMarkup="clr-namespace:XamarinToolkit.Views.MarkupView"
        Title="XamarinToolkit"
        x:Class="XamarinToolkit.AppShell">
 
@@ -76,7 +77,6 @@
             </Style>
         </ResourceDictionary>
 
-
     </Shell.Resources>
 
     <!--
@@ -84,6 +84,10 @@
         FlyoutDisplayOptions="AsMultipleItems" will create a separate flyout item for each child element
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
+
+    <FlyoutItem Title="Markup" Icon="icon_about">
+        <ShellContent Route="MarkupPage" ContentTemplate="{x:DataTemplate localMarkup:MarkupPage}"/>
+    </FlyoutItem>
 
     <!--<FlyoutItem Title="Translate Extension" Icon="icon_about">
         <ShellContent Route="TranslateExtensionPage" ContentTemplate="{x:DataTemplate localExtensions:TranslateExtensionPage}"/>

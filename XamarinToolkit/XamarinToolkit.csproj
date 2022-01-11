@@ -35,6 +35,10 @@
     <None Remove="Models\ExtensionsModel\" />
     <None Remove="Resx\" />
     <None Remove="Xamarin.CommunityToolkit.Markup" />
+    <None Remove="Views\MarkupView\" />
+    <None Remove="ViewModels\MarkupViewModel\" />
+    <None Remove="Views\ViewsView\" />
+    <None Remove="ViewModels\ViewsViewModel\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\ConverterView\" />
@@ -48,6 +52,10 @@
     <Folder Include="ViewModels\ExtensionsViewModel\" />
     <Folder Include="Models\ExtensionsModel\" />
     <Folder Include="Resx\" />
+    <Folder Include="Views\MarkupView\" />
+    <Folder Include="ViewModels\MarkupViewModel\" />
+    <Folder Include="Views\ViewsView\" />
+    <Folder Include="ViewModels\ViewsViewModel\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="Views\BehaviorView\AnimationBehaviorPage.xaml.cs">
