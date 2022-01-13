@@ -7,6 +7,7 @@
        xmlns:localEffects="clr-namespace:XamarinToolkit.Views.EffectsView"
        xmlns:localExtensions="clr-namespace:XamarinToolkit.Views.ExtensionsView"
        xmlns:localMarkup="clr-namespace:XamarinToolkit.Views.MarkupView"
+       xmlns:localViews="clr-namespace:XamarinToolkit.Views.ViewsView"
        Title="XamarinToolkit"
        x:Class="XamarinToolkit.AppShell">
 
@@ -85,7 +86,11 @@
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
 
-    <FlyoutItem Title="Markup" Icon="icon_about">
+    <FlyoutItem Title="Avatar View" Icon="icon_about">
+        <ShellContent Route="AvatarViewPage" ContentTemplate="{x:DataTemplate localViews:AvatarViewPage}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Markup" Icon="icon_feed">
         <ShellContent Route="MarkupPage" ContentTemplate="{x:DataTemplate localMarkup:MarkupPage}"/>
     </FlyoutItem>
 
