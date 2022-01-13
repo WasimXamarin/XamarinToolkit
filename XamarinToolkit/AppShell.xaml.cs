@@ -61,6 +61,7 @@ namespace XamarinToolkit
             Routing.RegisterRoute(nameof(TranslateExtensionPage), typeof(TranslateExtensionPage));
             Routing.RegisterRoute(nameof(MarkupPage), typeof(MarkupPage));
             Routing.RegisterRoute(nameof(AvatarViewPage), typeof(AvatarViewPage));
+            Routing.RegisterRoute(nameof(BadgeViewPage), typeof(BadgeViewPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
