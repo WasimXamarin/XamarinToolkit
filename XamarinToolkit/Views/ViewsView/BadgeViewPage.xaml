@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    x:Class="XamarinToolkit.Views.ViewsView.BadgeViewPage"
+    Title="{x:Binding Title}">
+
+    <ContentPage.Content>
+        <Grid>
+            <StackLayout>
+
+                <xct:BadgeView
+                    BackgroundColor="Red"
+                    FontAttributes="Bold"
+                    FontSize="Small"
+                    TextColor="White"
+                    BadgePosition="BottomRight"
+                    Text="10"
+                    HasShadow="True"
+                    IsAnimated="True"
+                    AutoHide="True">
+                    <Label
+                        Text="This label has a badge in the top-right"/>
+                </xct:BadgeView>
+
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>

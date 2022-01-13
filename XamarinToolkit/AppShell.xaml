@@ -86,6 +86,10 @@
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
 
+    <FlyoutItem Title="Badge View" Icon="icon_about">
+        <ShellContent Route="BadgeViewPage" ContentTemplate="{x:DataTemplate localViews:BadgeViewPage}"/>
+    </FlyoutItem>
+
     <FlyoutItem Title="Avatar View" Icon="icon_about">
         <ShellContent Route="AvatarViewPage" ContentTemplate="{x:DataTemplate localViews:AvatarViewPage}"/>
     </FlyoutItem>
