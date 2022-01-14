@@ -63,6 +63,7 @@ namespace XamarinToolkit
             Routing.RegisterRoute(nameof(AvatarViewPage), typeof(AvatarViewPage));
             Routing.RegisterRoute(nameof(BadgeViewPage), typeof(BadgeViewPage));
             Routing.RegisterRoute(nameof(CameraViewPage), typeof(CameraViewPage));
+            Routing.RegisterRoute(nameof(DockLayoutPage), typeof(DockLayoutPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)

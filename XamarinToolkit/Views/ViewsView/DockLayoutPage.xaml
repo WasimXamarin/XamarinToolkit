@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    x:Class="XamarinToolkit.Views.ViewsView.DockLayoutPage"
+    Title="{x:Binding Title}">
+
+    <ContentPage.Content>
+        <Grid RowDefinitions="Auto, *">
+            <Label Grid.Row="0" Text="{x:Binding Title}"/>
+            <StackLayout Grid.Row="1">
+                <xct:DockLayout LastChildFill="False">
+                    <Button xct:DockLayout.Dock="Top" Text="Top" HeightRequest="50"/>
+                    <Button xct:DockLayout.Dock="Bottom" Text="Bottom" HeightRequest="50"/>
+                    <Button xct:DockLayout.Dock="Left" Text="Left 1" WidthRequest="60"/>
+                    <Button xct:DockLayout.Dock="Left" Text="Left 2" WidthRequest="60"/>
+                    <Button xct:DockLayout.Dock="Right" Text="Right 1" WidthRequest="80"/>
+                    <Button xct:DockLayout.Dock="Right" Text="Right 2" WidthRequest="80"/>
+                </xct:DockLayout>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+
+</ContentPage>
