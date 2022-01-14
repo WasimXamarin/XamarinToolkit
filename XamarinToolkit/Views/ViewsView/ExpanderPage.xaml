@@ -6,10 +6,23 @@
     x:Class="XamarinToolkit.Views.ViewsView.ExpanderPage"
     Title="{x:Binding Title}">
 
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <Style TargetType="BoxView">
+                <Setter Property="HeightRequest" Value="100" />
+                <Setter Property="WidthRequest" Value="100" />
+            </Style>           
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
     <ContentPage.Content>
         <StackLayout>
             <StackLayout>
                 <Label Text="{x:Binding Title}"/>
+                <Button Text="Open Popup" Clicked="Button_Clicked"/>
             </StackLayout>
             <StackLayout>
                 <xct:Expander>
@@ -29,6 +42,23 @@
                     </Grid>
                 </xct:Expander>
 
+            </StackLayout>
+            <StackLayout>
+                <StackLayout>
+
+    <xct:UniformGrid>
+        <BoxView Color="Red" />
+        <BoxView Color="Yellow" />
+        <BoxView Color="Orange" />
+        <BoxView Color="Purple" />
+        <BoxView Color="Blue" />
+        <BoxView Color="Green" />
+        <BoxView Color="LightGreen" />
+        <BoxView Color="Gray" />
+        <BoxView Color="Pink" />
+    </xct:UniformGrid>
+
+    </StackLayout>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
