@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    x:Class="XamarinToolkit.Views.ViewsView.TabViewPage"
+    Title="{x:Binding Title}">
+
+    <Grid>
+        <xct:TabView
+                TabStripPlacement="Bottom"
+                TabStripBackgroundColor="Blue"
+                TabStripHeight="60"
+            TabContentHeight="100"
+            
+                TabIndicatorColor="Yellow"
+                TabContentBackgroundColor="Yellow">
+
+                <xct:TabViewItem
+                    Icon="SalmanImage.jpeg"
+                    Text="Tab 1"
+                    TextColor="White"
+                    BadgeText="1"
+                    TextColorSelected="Yellow"
+                    FontSize="12">
+                    <Grid 
+                        BackgroundColor="Gray">
+                        <Label
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            Text="TabContent1" />
+                    </Grid>
+                </xct:TabViewItem>
+
+                <xct:TabViewItem
+                    Icon="SalmanImage.jpeg"
+                    Text="Tab 2"
+                    TextColor="White"
+                    TextColorSelected="Yellow"
+                    FontSize="12">
+                    <Grid>
+                        <Label    
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            Text="TabContent2" />
+                    </Grid>
+                </xct:TabViewItem>
+        </xct:TabView>
+  </Grid>
+
+</ContentPage>
