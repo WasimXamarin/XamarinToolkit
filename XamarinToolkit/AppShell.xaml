@@ -86,6 +86,10 @@
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
 
+    <FlyoutItem Title="Tab View" Icon="icon_about">
+        <ShellContent Route="TabViewPage" ContentTemplate="{x:DataTemplate localViews:TabViewPage}"/>
+    </FlyoutItem>
+
     <FlyoutItem Title="Popup" Icon="icon_about">
         <ShellContent Route="PopupPage" ContentTemplate="{x:DataTemplate localViews:PopupPage}"/>
     </FlyoutItem>

@@ -66,6 +66,7 @@ namespace XamarinToolkit
             Routing.RegisterRoute(nameof(DockLayoutPage), typeof(DockLayoutPage));
             Routing.RegisterRoute(nameof(ExpanderPage), typeof(ExpanderPage));
             Routing.RegisterRoute(nameof(PopupPage), typeof(PopupPage));
+            Routing.RegisterRoute(nameof(TabViewPage), typeof(TabViewPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
