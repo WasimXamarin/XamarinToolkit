@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+    x:Class="XamarinToolkit.Views.ViewsView.ExpanderPage"
+    Title="{x:Binding Title}">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <Label Text="{x:Binding Title}"/>
+            </StackLayout>
+            <StackLayout>
+                <xct:Expander>
+                    <xct:Expander.Header>
+                        <Label Text="Salman Khan"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+                    </xct:Expander.Header>
+                    <Grid Padding="10" ColumnDefinitions="Auto, Auto">
+                        <Image Source="SalmanImage.jpeg"
+                               Aspect="AspectFill"
+                               HeightRequest="120"
+                               WidthRequest="120" />
+                        <Label Grid.Column="1"
+                               Text="Baboons are African and Arabian Old World monkeys belonging to the genus Papio, part of the subfamily Cercopithecinae."
+                               FontAttributes="Italic" />
+                    </Grid>
+                </xct:Expander>
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
