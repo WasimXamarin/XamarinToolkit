@@ -86,6 +86,10 @@
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
 
+    <FlyoutItem Title="Dock Layout" Icon="icon_about">
+        <ShellContent Route="DockLayoutPage" ContentTemplate="{x:DataTemplate localViews:DockLayoutPage}"/>
+    </FlyoutItem>
+
     <FlyoutItem Title="Camera View" Icon="icon_about">
         <ShellContent Route="CameraViewPage" ContentTemplate="{x:DataTemplate localViews:CameraViewPage}"/>
     </FlyoutItem>
